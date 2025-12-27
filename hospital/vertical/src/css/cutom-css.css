@@ -1,0 +1,32 @@
+.content-wrapper {
+    background-color: #fff;
+}
+.form-control {
+    padding: 0.8rem 0.75rem;
+}
+.form-control, .form-select {
+    border-radius: 12px;
+    border-color: #f2f2f2;
+}
+.dropzone {
+    border: 1px dashed #3596f7;
+    border-radius: 16px;
+}
+.theme-info .wizard-content .wizard > .actions > ul > li > a {
+    background-color: #375b9a;
+}
+.wizard-content .wizard > .steps > ul {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+}
+.wizard-content .wizard > .steps > ul > li {
+    background: none;
+    border: 0;
+}
+.btn-custom {
+    background-color: #3e64ab;
+    border-color: #3e64ab;
+    color:#fff;
+}
