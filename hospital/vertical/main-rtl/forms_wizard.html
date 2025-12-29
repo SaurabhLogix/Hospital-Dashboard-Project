@@ -1,813 +1,1334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../images/favicon.ico">
 
-    <title>APH - Management Dashboard</title>
-  
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../../images/favicon.ico">
+
+	<title>APH - Management Dashboard</title>
+
 	<!-- Vendors Style-->
 	<link rel="stylesheet" href="../src/css/vendors_css.css">
-	  
-	<!-- Style-->  
+
+	<!-- Style-->
 	<link rel="stylesheet" href="../src/css/style.css">
 	<link rel="stylesheet" href="../src/css/skin_color.css">
-    <link rel="stylesheet" href="../src/css/cutom-css.css">
+	<link rel="stylesheet" href="../src/css/cutom-css.css">
 
 </head>
+
 <body class="hold-transition light-skin sidebar-mini theme-info rtl">
-	
-<div class="wrapper">
-	<div id="loader"></div>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper me-0">
-	  <div class="container-full">
-		<!-- Content Header (Page header) -->
-		<div class="content-header">
-			<div class="d-flex align-items-center">
-                <img src="../../../images/APH-logo.jpg" />
-				<div class="ms-auto">
-                    <button type="button" class="waves-effect waves-light mx-10 btn btn-md btn-custom">Logout</button>										
-				</div>
-				
-			</div>
-		</div>	  
+	<div class="wrapper">
+		<div id="loader"></div>
 
-		<!-- Main content -->
-		<section class="content">
-
-		
-		
-
-		  <!-- Validation wizard -->
-		  <div class="box">
-			<div class="box-body wizard-content">
-				<form action="#" class="validation-wizard wizard-circle">
-					<!-- Step 1 -->
-                    <h6>Personal Info</h6>
-                    
-					<section>
-                        <h2 class="mt-50 text-center">Hospital Information</h2>
-                        <p class="text-center">Enter basic hospital details...</p>
-                        <div class="row align-items-md-center">                            
-                            <div class="col-md-9"> 
-                            <div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<label for="wfirstName2" class="form-label"> اسم المستشفى / Hospital Name <span class="danger">*</span> </label>
-									<input type="text" class="form-control required" id="wfirstName2" name="firstName"> 
-								</div>
-							</div>
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper me-0">
+			<div class="container-full">
+				<!-- Content Header (Page header) -->
+				<div class="content-header">
+					<div class="d-flex align-items-center">
+						<img src="../../../images/APH-logo.jpg" />
+						<div class="ms-auto">
+							<button type="button"
+								class="waves-effect waves-light mx-10 btn btn-md btn-custom">Logout</button>
 						</div>
-                            <div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="wfirstName2" class="form-label"> اسم المستشفى / Address <span class="danger">*</span> </label>
-									<input type="text" class="form-control required" id="wfirstName2" name="firstName"> 
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="wlastName2" class="form-label"> City <span class="danger">*</span> </label>
-									<input type="text" class="form-control required" id="wlastName2" name="lastName"> 
-								</div>
-							</div>
+
+					</div>
+				</div>
+
+				<!-- Main content -->
+				<section class="content">
+
+
+
+
+					<!-- Validation wizard -->
+					<div class="box">
+						<div class="box-body wizard-content">
+							<form action="#" class="validation-wizard wizard-circle">
+								<!-- Step 1 -->
+								<h6>Hospital Information</h6>
+
+								<section>
+									<h2 class="mt-50 text-center">Hospital Information</h2>
+									<p class="text-center">Enter basic hospital details...</p>
+									<div class="row align-items-md-center">
+										<div class="col-md-9">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="form-group">
+														<label for="wfirstName2" class="form-label"> اسم المستشفى /
+															Hospital Name <span class="danger">*</span> </label>
+														<input type="text" class="form-control " id="wfirstName2"
+															name="firstName" placeholder="Hospital Name">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="wfirstName2" class="form-label"> اسم المستشفى /
+															Address <span class="danger">*</span> </label>
+														<input type="text" class="form-control " id="wfirstName2"
+															name="firstName" placeholder="Address">
+													</div>
+												</div>
+												<div class=" col-md-6">
+													<div class="form-group">
+														<label for="wlastName2" class="form-label"> City <span
+																class="danger">*</span> </label>
+														<input type="text" class="form-control " id="wlastName2"
+															name="lastName" placeholder="City">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="wphoneNumber2" class="form-label">Phone</label>
+														<input type="tel" class="form-control" id="wphoneNumber2"
+															placeholder="Phone">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="wemailAddress2" class="form-label"> Email <span
+																class="danger">*</span> </label>
+														<input type="email" class="form-control " id="wemailAddress2"
+															name="emailAddress" placeholder="Email">
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="" class="form-label">Working Hours</label>
+														<input type="text" class="form-control" id=""
+															placeholder="Working Hour">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="" class="form-label">Number of Floors</label>
+														<input type="number" class="form-control" id="">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-3">
+											<div action="#" class="dropzone">
+												<div class="fallback">
+													<input name="file" type="file" multiple />
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+
+								<!-- Step 2 -->
+								<h6>Department Setup</h6>
+								<section>
+									<h2 class="mt-50 text-center">Department Setup</h2>
+									<p class="text-center">Create and Manage...</p>
+									<div class="row align-items-md-center">
+										<div class="col-md-9">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="jobTitle3" class="form-label">Department Name
+														</label>
+														<input type="text" class="form-control " id="jobTitle3"
+															placeholder="Department Name">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="webUrl3" class="form-label">Floor</label>
+														<input type="url" class="form-control " id="webUrl3"
+															name="webUrl3" placeholder="Floor">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="shortDescription3" class="form-label">Department
+															Code</label>
+														<input type="url" class="form-control " id="webUrl3"
+															name="webUrl3" placeholder="Department Code">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="shortDescription3" class="form-label">Status</label>
+														<div class="btn-group bootstrap-select show-tick"><button
+																type="button"
+																class="btn dropdown-toggle bs-placeholder btn-default"
+																data-bs-toggle="dropdown" role="button"
+																title="Nothing selected" aria-expanded="false"><span
+																	class="filter-option pull-left">Nothing
+																	selected</span>&nbsp;<span class="bs-caret"><span
+																		class="caret"></span></span></button>
+															<div class="dropdown-menu open" role="combobox"
+																style="max-height: 163.6px; overflow: hidden; min-height: 0px;">
+																<ul class="dropdown-menu inner" role="listbox"
+																	aria-expanded="false"
+																	style="max-height: 161.6px; overflow-y: auto; min-height: 0px;">
+																	<li data-original-index="0"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Lorem</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="1"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Ipsum</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="2"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Dummy</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																</ul>
+															</div><select class="selectpicker" multiple=""
+																tabindex="-98">
+																<option>Lorem</option>
+																<option>Ipsum</option>
+																<option>Dummy</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 text-center">
+											<h3 class="pb-3">Current Departments</h3>
+											<div class="form-group position-relative ">
+												<div class="grp_ico position-absolute">
+													<a href="javascript:void(0)" class="text-info me-10 font-size-16"
+														data-bs-toggle="tooltip" data-bs-original-title="Edit">
+														<i class="ti-marker-alt" title="Edit"></i>
+													</a>
+													<a href="javascript:void(0)" class="text-danger"
+														data-bs-original-title="Delete" title="Delete data-bs-toggle="
+														tooltip">
+														<i class="ti-trash"></i>
+													</a>
+												</div>
+
+												<input type="text" class="form-control " id="wlastName2" name="lastName"
+													placeholder="Emergency">
+											</div>
+											<div class="form-group position-relative">
+												<div class="grp_ico position-absolute">
+													<a href="javascript:void(0)" class="text-info me-10 font-size-16"
+														data-bs-toggle="tooltip" title="Edit"
+														data-bs-original-title="Edit">
+														<i class="ti-marker-alt"></i>
+													</a>
+													<a href="javascript:void(0)" class="text-danger"
+														data-bs-original-title="Delete" title="Delete"
+														data-bs-toggle="tooltip">
+														<i class="ti-trash"></i>
+													</a>
+												</div>
+												<input type="text" class="form-control " id="wlastName2" name="lastName"
+													placeholder="Internal Medicine">
+											</div>
+											<div class="form-group position-relative">
+												<div class="grp_ico position-absolute">
+													<a href="javascript:void(0)" class="text-info me-10 font-size-16"
+														data-bs-toggle="tooltip" title="Edit"
+														data-bs-original-title="Edit">
+														<i class="ti-marker-alt"></i>
+													</a>
+													<a href="javascript:void(0)" class="text-danger"
+														data-bs-original-title="Delete" title="Delete"
+														data-bs-toggle="tooltip">
+														<i class="ti-trash"></i>
+													</a>
+												</div>
+												<input type="text" class="form-control " id="wlastName2" name="lastName"
+													placeholder="Surgery">
+											</div>
+										</div>
+									</div>
+
+
+								</section>
+								<!-- Step 3 -->
+								<h6>User Roles & Permissions</h6>
+								<section>
+									<h2 class="mt-50 text-center">User Roles & Permissions</h2>
+									<p class="text-center">Enter basic hospital details...</p>
+									<div class="row align-items-md-center">
+										<div class="col-md-9" style="padding-left:10rem">
+											<div class="form-group">
+												<label for="wint1" class="form-label">Roll Name</label>
+												<input type="text" class="form-control " id="wint1"
+													placeholder="Roll Name">
+											</div>
+											<div class="form-group">
+												<label for="wintType1" class="form-label">اسم اللفة</label>
+												<div class="c-inputs-stacked d-flex flex-column">
+													<input type="checkbox" id="checkbox_123">
+													<label for="checkbox_123" class="me-30">View</label>
+													<input type="checkbox" id="checkbox_234">
+													<label for="checkbox_234" class="me-30">Add</label>
+													<input type="checkbox" id="checkbox_345">
+													<label for="checkbox_345" class="me-30">Edit</label>
+													<input type="checkbox" id="checkbox_345">
+													<label for="checkbox_345" class="me-30">Delete</label>
+												</div>
+											</div>
+
+										</div>
+										<div class="col-md-3 text-center">
+											<h3 class="pb-3">Current Departments</h3>
+											<div class="form-group position-relative ">
+												<div class="grp_ico position-absolute">
+													<a href="javascript:void(0)" class="text-info me-10 font-size-16"
+														data-bs-toggle="tooltip" data-bs-original-title="Edit">
+														<i class="ti-marker-alt" title="Edit"></i>
+													</a>
+													<a href="javascript:void(0)" class="text-danger"
+														data-bs-original-title="Delete" title="Delete data-bs-toggle="
+														tooltip"="">
+														<i class="ti-trash"></i>
+													</a>
+												</div>
+
+												<input type="text" class="form-control " id="wlastName2" name="lastName"
+													placeholder="Doctor">
+											</div>
+											<div class="form-group position-relative">
+												<div class="grp_ico position-absolute">
+													<a href="javascript:void(0)" class="text-info me-10 font-size-16"
+														data-bs-toggle="tooltip" title="Edit"
+														data-bs-original-title="Edit">
+														<i class="ti-marker-alt"></i>
+													</a>
+													<a href="javascript:void(0)" class="text-danger"
+														data-bs-original-title="Delete" title="Delete"
+														data-bs-toggle="tooltip">
+														<i class="ti-trash"></i>
+													</a>
+												</div>
+												<input type="text" class="form-control " id="wlastName2" name="lastName"
+													placeholder="Nurse">
+											</div>
+											<div class="form-group position-relative">
+												<div class="grp_ico position-absolute">
+													<a href="javascript:void(0)" class="text-info me-10 font-size-16"
+														data-bs-toggle="tooltip" title="Edit"
+														data-bs-original-title="Edit">
+														<i class="ti-marker-alt"></i>
+													</a>
+													<a href="javascript:void(0)" class="text-danger"
+														data-bs-original-title="Delete" title="Delete"
+														data-bs-toggle="tooltip">
+														<i class="ti-trash"></i>
+													</a>
+												</div>
+												<input type="text" class="form-control " id="wlastName2" name="lastName"
+													placeholder="Lab Technician">
+											</div>
+										</div>
+									</div>
+								</section>
+								<!-- Step 4 -->
+								<h6>Schedule Timings</h6>
+								<section>
+									<h2 class="mt-50 text-center">Schedule & Timings</h2>
+									<p class="text-center">Enter basic hospital details...</p>
+									<div class="row align-items-md-center">
+										<div class="col-md-9">
+											<div class="row">
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Shift Name </label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="--">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Start Time </label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="--">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="behName3" class="form-label">End Time </label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="--">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Duration</label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="--">
+													</div>
+												</div>
+
+
+
+											</div>
+
+											<div class="row">
+												<div class="col-6">
+													<div class="form-group">
+														<label for="shortDescription3"
+															class="form-label">Department</label>
+														<div class="btn-group bootstrap-select show-tick"><button
+																type="button"
+																class="btn dropdown-toggle bs-placeholder btn-default"
+																data-bs-toggle="dropdown" role="button"
+																title="Nothing selected" aria-expanded="false"><span
+																	class="filter-option pull-left">Nothing
+																	selected</span>&nbsp;<span class="bs-caret"><span
+																		class="caret"></span></span></button>
+															<div class="dropdown-menu open" role="combobox"
+																style="max-height: 163.6px; overflow: hidden; min-height: 0px;">
+																<ul class="dropdown-menu inner" role="listbox"
+																	aria-expanded="false"
+																	style="max-height: 161.6px; overflow-y: auto; min-height: 0px;">
+																	<li data-original-index="0"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Lorem</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="1"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Ipsum</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="2"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Dummy</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																</ul>
+															</div><select class="selectpicker" multiple=""
+																tabindex="-98">
+																<option>Lorem</option>
+																<option>Ipsum</option>
+																<option>Dummy</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="form-group">
+														<label for="shortDescription3" class="form-label">Status</label>
+														<div class="btn-group bootstrap-select show-tick"><button
+																type="button"
+																class="btn dropdown-toggle bs-placeholder btn-default"
+																data-bs-toggle="dropdown" role="button"
+																title="Nothing selected" aria-expanded="false"><span
+																	class="filter-option pull-left">Nothing
+																	selected</span>&nbsp;<span class="bs-caret"><span
+																		class="caret"></span></span></button>
+															<div class="dropdown-menu open" role="combobox"
+																style="max-height: 163.6px; overflow: hidden; min-height: 0px;">
+																<ul class="dropdown-menu inner" role="listbox"
+																	aria-expanded="false"
+																	style="max-height: 161.6px; overflow-y: auto; min-height: 0px;">
+																	<li data-original-index="0"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Lorem</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="1"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Ipsum</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="2"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Dummy</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																</ul>
+															</div><select class="selectpicker" multiple=""
+																tabindex="-98">
+																<option>Lorem</option>
+																<option>Ipsum</option>
+																<option>Dummy</option>
+															</select>
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+
+										</div>
+
+									</div>
+								</section>
+								<!-- Step 5 -->
+								<h6>Staff & Users</h6>
+								<section>
+									<h2 class="mt-50 text-center">Staff & Users</h2>
+									<p class="text-center">Enter basic hospital details...</p>
+									<div class="row align-items-md-center">
+										<div class="col-md-9">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Full Name </label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="Full Name">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Username</label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="Username">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Roll </label>
+														<div class="btn-group bootstrap-select show-tick"><button
+																type="button"
+																class="btn dropdown-toggle bs-placeholder btn-default"
+																data-bs-toggle="dropdown" role="button"
+																title="Nothing selected" aria-expanded="false"><span
+																	class="filter-option pull-left">Nothing
+																	selected</span>&nbsp;<span class="bs-caret"><span
+																		class="caret"></span></span></button>
+															<div class="dropdown-menu open" role="combobox"
+																style="max-height: 163.6px; overflow: hidden; min-height: 0px;">
+																<ul class="dropdown-menu inner" role="listbox"
+																	aria-expanded="false"
+																	style="max-height: 161.6px; overflow-y: auto; min-height: 0px;">
+																	<li data-original-index="0"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Lorem</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="1"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Ipsum</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="2"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Dummy</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																</ul>
+															</div><select class="selectpicker" multiple=""
+																tabindex="-98">
+																<option>Lorem</option>
+																<option>Ipsum</option>
+																<option>Dummy</option>
+															</select>
+														</div>
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Password</label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="--">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Confirm
+															Password</label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="--">
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="form-group">
+														<label for="shortDescription3"
+															class="form-label">Department</label>
+														<div class="btn-group bootstrap-select show-tick"><button
+																type="button"
+																class="btn dropdown-toggle bs-placeholder btn-default"
+																data-bs-toggle="dropdown" role="button"
+																title="Nothing selected" aria-expanded="false"><span
+																	class="filter-option pull-left">Nothing
+																	selected</span>&nbsp;<span class="bs-caret"><span
+																		class="caret"></span></span></button>
+															<div class="dropdown-menu open" role="combobox"
+																style="max-height: 163.6px; overflow: hidden; min-height: 0px;">
+																<ul class="dropdown-menu inner" role="listbox"
+																	aria-expanded="false"
+																	style="max-height: 161.6px; overflow-y: auto; min-height: 0px;">
+																	<li data-original-index="0"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Lorem</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="1"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Ipsum</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="2"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Dummy</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																</ul>
+															</div><select class="selectpicker" multiple=""
+																tabindex="-98">
+																<option>Lorem</option>
+																<option>Ipsum</option>
+																<option>Dummy</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="form-group">
+														<label for="shortDescription3" class="form-label">Shift</label>
+														<div class="btn-group bootstrap-select show-tick"><button
+																type="button"
+																class="btn dropdown-toggle bs-placeholder btn-default"
+																data-bs-toggle="dropdown" role="button"
+																title="Nothing selected" aria-expanded="false"><span
+																	class="filter-option pull-left">Nothing
+																	selected</span>&nbsp;<span class="bs-caret"><span
+																		class="caret"></span></span></button>
+															<div class="dropdown-menu open" role="combobox"
+																style="max-height: 163.6px; overflow: hidden; min-height: 0px;">
+																<ul class="dropdown-menu inner" role="listbox"
+																	aria-expanded="false"
+																	style="max-height: 161.6px; overflow-y: auto; min-height: 0px;">
+																	<li data-original-index="0"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Lorem</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="1"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Ipsum</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																	<li data-original-index="2"><a tabindex="0" class=""
+																			data-tokens="null" role="option"
+																			aria-disabled="false"
+																			aria-selected="false"><span
+																				class="text">Dummy</span><span
+																				class="glyphicon glyphicon-ok check-mark"></span></a>
+																	</li>
+																</ul>
+															</div><select class="selectpicker" multiple=""
+																tabindex="-98">
+																<option>Lorem</option>
+																<option>Ipsum</option>
+																<option>Dummy</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Email</label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="Email">
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label for="behName3" class="form-label">Phone</label>
+														<input type="text" class="form-control " id="behName3"
+															placeholder="Phone">
+													</div>
+												</div>
+
+
+
+
+											</div>
+
+											<div class="row">
+
+
+											</div>
+
+
+										</div>
+
+									</div>
+								</section>
+							</form>
+						</div>
+						<!-- /.box-body -->
+					</div>
+					<!-- /.box -->
+
+				</section>
+				<!-- /.content -->
+			</div>
+		</div>
+		<!-- /.content-wrapper -->
+
+		<!-- Side panel -->
+		<!-- quick_actions_toggle -->
+		<div class="modal modal-left fade" id="quick_actions_toggle" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content slim-scroll">
+					<div class="modal-body bg-white p-30">
+						<div class="d-flex align-items-center justify-content-between pb-30">
+							<h4 class="m-0">Quick Actions<br>
+								<small class="badge fs-12 badge-primary mt-10">23 tasks pending</small>
+							</h4>
+							<a href="#" class="btn btn-icon btn-danger-light btn-sm no-shadow" data-bs-dismiss="modal">
+								<span class="fa fa-close"></span>
+							</a>
 						</div>
 						<div class="row">
-                            <div class="col-md-6">
-								<div class="form-group">
-									<label for="wphoneNumber2" class="form-label">Phone</label>
-									<input type="tel" class="form-control" id="wphoneNumber2"> 
-								</div>
+							<div class="col-6">
+								<a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block"
+									href="accounting.html">
+									<i class="icon-Euro fs-36"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span class="fs-16">Accounting</span>
+								</a>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="wemailAddress2" class="form-label"> Email <span class="danger">*</span> </label>
-									<input type="email" class="form-control required" id="wemailAddress2" name="emailAddress"> 
-								</div>
-							</div>							
-						</div>
-                        <div class="row">
-                            <div class="col-md-6">
-								<div class="form-group">
-									<label for="" class="form-label">Working Hours</label>
-									<input type="text" class="form-control" id=""> 
-								</div>
+							<div class="col-6">
+								<a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block"
+									href="doctor_list.html">
+									<i class="icon-Mail-attachment fs-36"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span class="fs-16">Members</span>
+								</a>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="" class="form-label">Number of Floors</label>
-									<input type="number" class="form-control" id=""> 
-								</div>
-							</div>							
-						</div>						
-                        </div>
-                            
-                        <div class="col-md-3">
-                            <div action="#" class="dropzone">
-                            <div class="fallback">
-                                <input name="file" type="file" multiple />
-                            </div>
-                           </div>
-                        </div>
-                        </div>
-					</section>
-                    
-					<!-- Step 2 -->
-					<h6>Job Status</h6>
-					<section>
-                        <h2 class="mt-50 text-center">Department Setup</h2>
-                        <p class="text-center">Create and Manage...</p>
-                        <div class="row align-items-md-center">
-                            <div class="col-md-9"> 
-                                <div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="jobTitle3" class="form-label">Department Name :</label>
-									<input type="text" class="form-control required" id="jobTitle3">
-								</div>
+							<div class="col-6">
+								<a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block"
+									href="projects.html">
+									<i class="icon-Box2 fs-36"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span class="fs-16">Projects</span>
+								</a>
 							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="webUrl3" class="form-label">Company URL :</label>
-									<input type="url" class="form-control required" id="webUrl3" name="webUrl3"> 
-								</div>
+							<div class="col-6">
+								<a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block"
+									href="contact_userlist.html">
+									<i class="icon-Group fs-36"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span class="fs-16">Customers</span>
+								</a>
 							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<label for="shortDescription3" class="form-label">Short Description :</label>
-									<textarea name="shortDescription" id="shortDescription3" rows="6" class="form-control"></textarea>
-								</div>
+							<div class="col-6">
+								<a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block"
+									href="mailbox.html">
+									<i class="icon-Chart-bar fs-36"><span class="path1"></span><span
+											class="path2"></span><span class="path3"></span><span
+											class="path4"></span></i>
+									<span class="fs-16">Email</span>
+								</a>
+							</div>
+							<div class="col-6">
+								<a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block"
+									href="setting.html">
+									<i class="icon-Color-profile fs-36"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span class="fs-16">Settings</span>
+								</a>
+							</div>
+							<div class="col-6">
+								<a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block"
+									href="ecommerce_orders.html">
+									<i class="icon-Euro fs-36"><span class="path1"></span><span
+											class="path2"></span></i>
+									<span class="fs-18">Orders</span>
+								</a>
 							</div>
 						</div>
-                            </div>
-                            <div class="col-md-3">
-                            gfhgfh
-                            </div>
-                        </div>
-                        
-						
-					</section>
-					<!-- Step 3 -->
-					<h6>Interview</h6>
-					<section>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="wint1" class="form-label">Interview For :</label>
-									<input type="text" class="form-control required" id="wint1"> 
-								</div>
-								<div class="form-group">
-									<label for="wintType1" class="form-label">Interview Type :</label>
-									<select class="form-select required" id="wintType1" data-placeholder="Type to search cities" name="wintType1">
-										<option value="Banquet">Normal</option>
-										<option value="Fund Raiser">Difficult</option>
-										<option value="Dinner Party">Hard</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="wLocation1" class="form-label">Location :</label>
-									<select class="form-select required" id="wLocation1" name="wlocation">
-										<option value="">Select City</option>
-										<option value="India">India</option>
-										<option value="USA">USA</option>
-										<option value="Dubai">Dubai</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="wjobTitle4" class="form-label">Interview Date :</label>
-									<input type="date" class="form-control required" id="wjobTitle4">
-								</div>
-								<div class="form-group">
-									<label class="form-label">Requirements :</label>
-										<input name="group2" type="radio" id="radio_3" value="1">
-										<label for="radio_3" class="d-block">Employee</label>
-										<input name="group2" type="radio" id="radio_4" value="1">
-										<label for="radio_4">Contract</label>
-								</div>
-							</div>
-						</div>
-					</section>
-					<!-- Step 4 -->
-					<h6>Remark</h6>
-					<section>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="behName3" class="form-label">Behaviour :</label>
-									<input type="text" class="form-control required" id="behName3">
-								</div>
-								<div class="form-group">
-									<label for="participants3" class="form-label">Confidance</label>
-									<input type="text" class="form-control required" id="participants3">
-								</div>
-								<div class="form-group">
-									<label for="participants4" class="form-label">Result</label>
-									<select class="form-select required" id="participants4" name="location">
-										<option value="">Select Result</option>
-										<option value="Selected">Selected</option>
-										<option value="Rejected">Rejected</option>
-										<option value="Call Second-time">Call Second-time</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="decisions2" class="form-label">Comments</label>
-									<textarea name="decisions" id="decisions2" rows="4" class="form-control"></textarea>
-								</div>
-								<div class="form-group">
-									<label class="form-label">Rate Interviwer :</label>
-									<div class="c-inputs-stacked">
-										<input type="checkbox" id="checkbox_6">
-										<label for="checkbox_6" class="d-block">1 star</label>
-										<input type="checkbox" id="checkbox_7">
-										<label for="checkbox_7" class="d-block">2 star</label>
-										<input type="checkbox" id="checkbox_8">
-										<label for="checkbox_8" class="d-block">3 star</label>
-										<input type="checkbox" id="checkbox_9">
-										<label for="checkbox_9" class="d-block">4 star</label>
-										<input type="checkbox" id="checkbox_10">
-										<label for="checkbox_10" class="d-block">5 star</label>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</form>
+					</div>
+				</div>
 			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
-
-		</section>
-		<!-- /.content -->
-	  </div>
-  </div>
-  <!-- /.content-wrapper -->
- 
-  <!-- Side panel --> 
-  <!-- quick_actions_toggle -->
-  <div class="modal modal-left fade" id="quick_actions_toggle" tabindex="-1">
-	  <div class="modal-dialog">
-		<div class="modal-content slim-scroll">
-		  <div class="modal-body bg-white p-30">
-			<div class="d-flex align-items-center justify-content-between pb-30">
-				<h4 class="m-0">Quick Actions<br>
-				<small class="badge fs-12 badge-primary mt-10">23 tasks pending</small></h4>
-				<a href="#" class="btn btn-icon btn-danger-light btn-sm no-shadow" data-bs-dismiss="modal">
-					<span class="fa fa-close"></span>
-				</a>
-			</div>
-            <div class="row">
-                <div class="col-6">
-                    <a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block" href="accounting.html">
-                        <i class="icon-Euro fs-36"><span class="path1"></span><span class="path2"></span></i>
-                        <span class="fs-16">Accounting</span>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block" href="doctor_list.html">
-                        <i class="icon-Mail-attachment fs-36"><span class="path1"></span><span class="path2"></span></i>
-                        <span class="fs-16">Members</span>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block" href="projects.html">
-                        <i class="icon-Box2 fs-36"><span class="path1"></span><span class="path2"></span></i>
-                        <span class="fs-16">Projects</span>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block" href="contact_userlist.html">
-                        <i class="icon-Group fs-36"><span class="path1"></span><span class="path2"></span></i>
-                        <span class="fs-16">Customers</span>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block" href="mailbox.html">
-                        <i class="icon-Chart-bar fs-36"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
-                        <span class="fs-16">Email</span>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block" href="setting.html">
-                        <i class="icon-Color-profile fs-36"><span class="path1"></span><span class="path2"></span></i>
-                        <span class="fs-16">Settings</span>
-                    </a>
-                </div>
-                <div class="col-6">
-                    <a class="waves-effect waves-light btn btn-app btn btn-primary-light btn-flat mx-0 mb-20 no-shadow py-35 h-auto d-block" href="ecommerce_orders.html">
-                        <i class="icon-Euro fs-36"><span class="path1"></span><span class="path2"></span></i>
-                        <span class="fs-18">Orders</span>
-                    </a>
-                </div>
-			</div>
-		  </div>
 		</div>
-	  </div>
-  </div>
-  <!-- /quick_actions_toggle -->    
-    
-  <!-- quick_panel_toggle -->
-  <div class="modal modal-left fade" id="quick_panel_toggle" tabindex="-1">
-	  <div class="modal-dialog">
-		<div class="modal-content slim-scroll2">
-		  <div class="modal-body bg-white py-20 px-0">
-			<div class="d-flex align-items-center justify-content-between pb-30">
-				<ul class="nav nav-tabs customtab3 px-30" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" data-bs-toggle="tab" href="#quick_panel_logs">Audit Logs</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#quick_panel_notifications">Notifications</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" data-bs-toggle="tab" href="#quick_panel_settings">Settings</a>
-					</li>
-				</ul>
-                <div class="offcanvas-close">
-                    <a href="#" class="btn btn-icon btn-danger-light btn-sm no-shadow" data-bs-dismiss="modal">
-						<span class="fa fa-close"></span>
-					</a>
-                </div>
+		<!-- /quick_actions_toggle -->
+
+		<!-- quick_panel_toggle -->
+		<div class="modal modal-left fade" id="quick_panel_toggle" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content slim-scroll2">
+					<div class="modal-body bg-white py-20 px-0">
+						<div class="d-flex align-items-center justify-content-between pb-30">
+							<ul class="nav nav-tabs customtab3 px-30" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" data-bs-toggle="tab" href="#quick_panel_logs">Audit
+										Logs</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab"
+										href="#quick_panel_notifications">Notifications</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" data-bs-toggle="tab" href="#quick_panel_settings">Settings</a>
+								</li>
+							</ul>
+							<div class="offcanvas-close">
+								<a href="#" class="btn btn-icon btn-danger-light btn-sm no-shadow"
+									data-bs-dismiss="modal">
+									<span class="fa fa-close"></span>
+								</a>
+							</div>
+						</div>
+						<div class="px-30">
+							<div class="tab-content">
+								<div class="tab-pane active" id="quick_panel_logs" role="tabpanel">
+									<div class="mb-30">
+										<h5 class="fw-500 mb-15">System Messages</h5>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
+												<img src="../../../images/svg-icon/color-svg/001-glass.svg" class="h-30"
+													alt="">
+											</div>
+											<div class="d-flex flex-column flex-grow-1 me-2 fw-500">
+												<a href="#" class="text-dark hover-primary mb-1 fs-16">Duis faucibus
+													lorem</a>
+												<span class="text-fade">Pharetra, Nulla</span>
+											</div>
+											<span class="badge badge-xl badge-light"><span
+													class="fw-600">+125$</span></span>
+										</div>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
+												<img src="../../../images/svg-icon/color-svg/002-google.svg"
+													class="h-30" alt="">
+											</div>
+											<div class="d-flex flex-column flex-grow-1 me-2 fw-500">
+												<a href="#" class="text-dark hover-danger mb-1 fs-16">Mauris varius
+													augue</a>
+												<span class="text-fade">Pharetra, Nulla</span>
+											</div>
+											<span class="badge badge-xl badge-light"><span
+													class="fw-600">+125$</span></span>
+										</div>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
+												<img src="../../../images/svg-icon/color-svg/003-settings.svg"
+													class="h-30" alt="">
+											</div>
+											<div class="d-flex flex-column flex-grow-1 me-2 fw-500">
+												<a href="#" class="text-dark hover-success mb-1 fs-16">Aliquam in
+													magna</a>
+												<span class="text-fade">Pharetra, Nulla</span>
+											</div>
+											<span class="badge badge-xl badge-light"><span
+													class="fw-600">+125$</span></span>
+										</div>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
+												<img src="../../../images/svg-icon/color-svg/004-dad.svg" class="h-30"
+													alt="">
+											</div>
+											<div class="d-flex flex-column flex-grow-1 me-2 fw-500">
+												<a href="#" class="text-dark hover-info mb-1 fs-16">Phasellus venenatis
+													nisi</a>
+												<span class="text-fade">Pharetra, Nulla</span>
+											</div>
+											<span class="badge badge-xl badge-light"><span
+													class="fw-600">+125$</span></span>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
+												<img src="../../../images/svg-icon/color-svg/005-paint-palette.svg"
+													class="h-30" alt="">
+											</div>
+											<div class="d-flex flex-column flex-grow-1 me-2 fw-500">
+												<a href="#" class="text-dark hover-warning mb-1 fs-16">Vivamus
+													consectetur</a>
+												<span class="text-fade">Pharetra, Nulla</span>
+											</div>
+											<span class="badge badge-xl badge-light"><span
+													class="fw-600">+125$</span></span>
+										</div>
+									</div>
+									<div class="mb-30">
+										<h5 class="fw-500 mb-15">Tasks Overview</h5>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-primary-light h-50 w-50 l-h-60 rounded text-center">
+												<span class="icon-Library fs-24"><span class="path1"></span><span
+														class="path2"></span></span>
+											</div>
+											<div class="d-flex flex-column fw-500">
+												<a href="#" class="text-dark hover-primary mb-1 fs-16">Project
+													Briefing</a>
+												<span class="text-fade">Project Manager</span>
+											</div>
+										</div>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-danger-light h-50 w-50 l-h-60 rounded text-center">
+												<span class="icon-Write fs-24"><span class="path1"></span><span
+														class="path2"></span></span>
+											</div>
+											<div class="d-flex flex-column fw-500">
+												<a href="#" class="text-dark hover-danger mb-1 fs-16">Concept Design</a>
+												<span class="text-fade">Art Director</span>
+											</div>
+										</div>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-success-light h-50 w-50 l-h-60 rounded text-center">
+												<span class="icon-Group-chat fs-24"><span class="path1"></span><span
+														class="path2"></span></span>
+											</div>
+											<div class="d-flex flex-column fw-500">
+												<a href="#" class="text-dark hover-success mb-1 fs-16">Functional
+													Logics</a>
+												<span class="text-fade">Lead Developer</span>
+											</div>
+										</div>
+										<div class="d-flex align-items-center mb-30">
+											<div class="me-15 bg-info-light h-50 w-50 l-h-60 rounded text-center">
+												<span class="icon-Attachment1 fs-24"><span class="path1"></span><span
+														class="path2"></span><span class="path3"></span><span
+														class="path4"></span></span>
+											</div>
+											<div class="d-flex flex-column fw-500">
+												<a href="#" class="text-dark hover-info mb-1 fs-16">Development</a>
+												<span class="text-fade">DevOps</span>
+											</div>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="me-15 bg-warning-light h-50 w-50 l-h-60 rounded text-center">
+												<span class="icon-Shield-user fs-24"></span>
+											</div>
+											<div class="d-flex flex-column fw-500">
+												<a href="#" class="text-dark hover-warning mb-1 fs-16">Testing</a>
+												<span class="text-fade">QA Managers</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="quick_panel_notifications" role="tabpanel">
+									<div>
+										<div class="media-list">
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">10:10</h4>
+												<div class="media-body ps-15 bs-5 rounded border-primary">
+													<p>Morbi quis ex eu arcu auctor sagittis.</p>
+													<span class="text-fade">by Johne</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">08:40</h4>
+												<div class="media-body ps-15 bs-5 rounded border-success">
+													<p>Proin iaculis eros non odio ornare efficitur.</p>
+													<span class="text-fade">by Amla</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">07:10</h4>
+												<div class="media-body ps-15 bs-5 rounded border-info">
+													<p>In mattis mi ut posuere consectetur.</p>
+													<span class="text-fade">by Josef</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">01:15</h4>
+												<div class="media-body ps-15 bs-5 rounded border-danger">
+													<p>Morbi quis ex eu arcu auctor sagittis.</p>
+													<span class="text-fade">by Rima</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">23:12</h4>
+												<div class="media-body ps-15 bs-5 rounded border-warning">
+													<p>Morbi quis ex eu arcu auctor sagittis.</p>
+													<span class="text-fade">by Alaxa</span>
+												</div>
+											</a>
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">10:10</h4>
+												<div class="media-body ps-15 bs-5 rounded border-primary">
+													<p>Morbi quis ex eu arcu auctor sagittis.</p>
+													<span class="text-fade">by Johne</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">08:40</h4>
+												<div class="media-body ps-15 bs-5 rounded border-success">
+													<p>Proin iaculis eros non odio ornare efficitur.</p>
+													<span class="text-fade">by Amla</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">07:10</h4>
+												<div class="media-body ps-15 bs-5 rounded border-info">
+													<p>In mattis mi ut posuere consectetur.</p>
+													<span class="text-fade">by Josef</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">01:15</h4>
+												<div class="media-body ps-15 bs-5 rounded border-danger">
+													<p>Morbi quis ex eu arcu auctor sagittis.</p>
+													<span class="text-fade">by Rima</span>
+												</div>
+											</a>
+
+											<a class="media media-single px-0" href="#">
+												<h4 class="w-50 text-gray fw-500">23:12</h4>
+												<div class="media-body ps-15 bs-5 rounded border-warning">
+													<p>Morbi quis ex eu arcu auctor sagittis.</p>
+													<span class="text-fade">by Alaxa</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="quick_panel_settings" role="tabpanel">
+									<div>
+										<form class="form">
+											<!--begin::Section-->
+											<div>
+												<h5 class="fw-500 mb-15">Customer Care</h5>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Enable Notifications:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-primary active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Enable Case Tracking:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button" class="btn btn-sm btn-toggle btn-primary"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Support Portal:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-primary active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+											</div>
+											<!--end::Section-->
+											<div class="dropdown-divider"></div>
+											<!--begin::Section-->
+											<div class="pt-2">
+												<h5 class="fw-500 mb-15">Reports</h5>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Generate Reports:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-danger active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Enable Report Export:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-danger active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Allow Data Collection:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-danger active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+											</div>
+											<!--end::Section-->
+											<div class="dropdown-divider"></div>
+											<!--begin::Section-->
+											<div class="pt-2">
+												<h5 class="fw-500 mb-15">Memebers</h5>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Enable Member singup:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-warning active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Allow User Feedbacks:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-warning active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+												<div class="form-group mb-0 row align-items-center">
+													<label class="col-8 col-form-label">Enable Customer Portal:</label>
+													<div class="col-4 d-flex justify-content-end">
+														<button type="button"
+															class="btn btn-sm btn-toggle btn-warning active"
+															data-bs-toggle="button">
+															<span class="handle"></span>
+														</button>
+													</div>
+												</div>
+											</div>
+											<!--end::Section-->
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-              <div class="px-30">
-                <div class="tab-content">
-                    <div class="tab-pane active" id="quick_panel_logs" role="tabpanel">
-                        <div class="mb-30">
-                            <h5 class="fw-500 mb-15">System Messages</h5>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
-                                      <img src="../../../images/svg-icon/color-svg/001-glass.svg" class="h-30" alt="">
-                                </div>
-                                <div class="d-flex flex-column flex-grow-1 me-2 fw-500">
-                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Duis faucibus lorem</a>
-                                    <span class="text-fade">Pharetra, Nulla</span>
-                                </div>
-                                <span class="badge badge-xl badge-light"><span class="fw-600">+125$</span></span>
-                            </div>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
-                                      <img src="../../../images/svg-icon/color-svg/002-google.svg" class="h-30" alt="">
-                                </div>
-                                <div class="d-flex flex-column flex-grow-1 me-2 fw-500">
-                                    <a href="#" class="text-dark hover-danger mb-1 fs-16">Mauris varius augue</a>
-                                    <span class="text-fade">Pharetra, Nulla</span>
-                                </div>
-                                <span class="badge badge-xl badge-light"><span class="fw-600">+125$</span></span>
-                            </div>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
-                                      <img src="../../../images/svg-icon/color-svg/003-settings.svg" class="h-30" alt="">
-                                </div>
-                                <div class="d-flex flex-column flex-grow-1 me-2 fw-500">
-                                    <a href="#" class="text-dark hover-success mb-1 fs-16">Aliquam in magna</a>
-                                    <span class="text-fade">Pharetra, Nulla</span>
-                                </div>
-                                <span class="badge badge-xl badge-light"><span class="fw-600">+125$</span></span>
-                            </div>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
-                                      <img src="../../../images/svg-icon/color-svg/004-dad.svg" class="h-30" alt="">
-                                </div>
-                                <div class="d-flex flex-column flex-grow-1 me-2 fw-500">
-                                    <a href="#" class="text-dark hover-info mb-1 fs-16">Phasellus venenatis nisi</a>
-                                    <span class="text-fade">Pharetra, Nulla</span>
-                                </div>
-                                <span class="badge badge-xl badge-light"><span class="fw-600">+125$</span></span>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="me-15 bg-lightest h-50 w-50 l-h-50 rounded text-center">
-                                      <img src="../../../images/svg-icon/color-svg/005-paint-palette.svg" class="h-30" alt="">
-                                </div>
-                                <div class="d-flex flex-column flex-grow-1 me-2 fw-500">
-                                    <a href="#" class="text-dark hover-warning mb-1 fs-16">Vivamus consectetur</a>
-                                    <span class="text-fade">Pharetra, Nulla</span>
-                                </div>
-                                <span class="badge badge-xl badge-light"><span class="fw-600">+125$</span></span>
-                            </div>
-                        </div>
-                        <div class="mb-30">
-                            <h5 class="fw-500 mb-15">Tasks Overview</h5>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-primary-light h-50 w-50 l-h-60 rounded text-center">
-                                      <span class="icon-Library fs-24"><span class="path1"></span><span class="path2"></span></span>
-                                </div>
-                                <div class="d-flex flex-column fw-500">
-                                    <a href="#" class="text-dark hover-primary mb-1 fs-16">Project Briefing</a>
-                                    <span class="text-fade">Project Manager</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-danger-light h-50 w-50 l-h-60 rounded text-center">
-                                    <span class="icon-Write fs-24"><span class="path1"></span><span class="path2"></span></span>
-                                </div>
-                                <div class="d-flex flex-column fw-500">
-                                    <a href="#" class="text-dark hover-danger mb-1 fs-16">Concept Design</a>
-                                    <span class="text-fade">Art Director</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-success-light h-50 w-50 l-h-60 rounded text-center">
-                                    <span class="icon-Group-chat fs-24"><span class="path1"></span><span class="path2"></span></span>
-                                </div>
-                                <div class="d-flex flex-column fw-500">
-                                    <a href="#" class="text-dark hover-success mb-1 fs-16">Functional Logics</a>
-                                    <span class="text-fade">Lead Developer</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-30">
-                                <div class="me-15 bg-info-light h-50 w-50 l-h-60 rounded text-center">
-                                    <span class="icon-Attachment1 fs-24"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
-                                </div>
-                                <div class="d-flex flex-column fw-500">
-                                    <a href="#" class="text-dark hover-info mb-1 fs-16">Development</a>
-                                    <span class="text-fade">DevOps</span>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <div class="me-15 bg-warning-light h-50 w-50 l-h-60 rounded text-center">
-                                    <span class="icon-Shield-user fs-24"></span>
-                                </div>
-                                <div class="d-flex flex-column fw-500">
-                                    <a href="#" class="text-dark hover-warning mb-1 fs-16">Testing</a>
-                                    <span class="text-fade">QA Managers</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="quick_panel_notifications" role="tabpanel">
-                        <div>
-                            <div class="media-list">
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">10:10</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-primary">
-                                    <p>Morbi quis ex eu arcu auctor sagittis.</p>
-                                    <span class="text-fade">by Johne</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">08:40</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-success">
-                                    <p>Proin iaculis eros non odio ornare efficitur.</p>
-                                    <span class="text-fade">by Amla</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">07:10</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-info">
-                                    <p>In mattis mi ut posuere consectetur.</p>
-                                    <span class="text-fade">by Josef</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">01:15</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-danger">
-                                    <p>Morbi quis ex eu arcu auctor sagittis.</p>
-                                    <span class="text-fade">by Rima</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">23:12</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-warning">
-                                    <p>Morbi quis ex eu arcu auctor sagittis.</p>
-                                    <span class="text-fade">by Alaxa</span>
-                                  </div>
-                                </a>
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">10:10</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-primary">
-                                    <p>Morbi quis ex eu arcu auctor sagittis.</p>
-                                    <span class="text-fade">by Johne</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">08:40</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-success">
-                                    <p>Proin iaculis eros non odio ornare efficitur.</p>
-                                    <span class="text-fade">by Amla</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">07:10</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-info">
-                                    <p>In mattis mi ut posuere consectetur.</p>
-                                    <span class="text-fade">by Josef</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">01:15</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-danger">
-                                    <p>Morbi quis ex eu arcu auctor sagittis.</p>
-                                    <span class="text-fade">by Rima</span>
-                                  </div>
-                                </a>
-
-                                <a class="media media-single px-0" href="#">
-                                  <h4 class="w-50 text-gray fw-500">23:12</h4>
-                                  <div class="media-body ps-15 bs-5 rounded border-warning">
-                                    <p>Morbi quis ex eu arcu auctor sagittis.</p>
-                                    <span class="text-fade">by Alaxa</span>
-                                  </div>
-                                </a>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane" id="quick_panel_settings" role="tabpanel">
-                        <div>
-                            <form class="form">
-							<!--begin::Section-->
-							<div>
-								<h5 class="fw-500 mb-15">Customer Care</h5>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Enable Notifications:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-primary active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Enable Case Tracking:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-primary" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Support Portal:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-primary active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-							</div>
-							<!--end::Section-->
-							<div class="dropdown-divider"></div>
-							<!--begin::Section-->
-							<div class="pt-2">
-								<h5 class="fw-500 mb-15">Reports</h5>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Generate Reports:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-danger active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Enable Report Export:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-danger active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Allow Data Collection:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-danger active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-							</div>
-							<!--end::Section-->
-							<div class="dropdown-divider"></div>
-							<!--begin::Section-->
-							<div class="pt-2">
-								<h5 class="fw-500 mb-15">Memebers</h5>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Enable Member singup:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-warning active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Allow User Feedbacks:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-warning active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-								<div class="form-group mb-0 row align-items-center">
-									<label class="col-8 col-form-label">Enable Customer Portal:</label>
-									<div class="col-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-sm btn-toggle btn-warning active" data-bs-toggle="button" >
-                                            <span class="handle"></span>
-                                        </button>
-									</div>
-								</div>
-							</div>
-							<!--end::Section-->
-						</form>
-                        </div>
-                    </div>
-                </div>
-              </div>
-		  </div>
 		</div>
-	  </div>
-  </div>
-  <!-- /quick_panel_toggle -->
-  
-  <!-- quick_shop_toggle -->
-  <div class="modal modal-left fade" id="quick_shop_toggle" tabindex="-1">
-	  <div class="modal-dialog">
-		<div class="modal-content">
-		  <div class="modal-header">
-			  <div class="px-15 d-flex w-p100 align-items-center justify-content-between">
-				<h4 class="m-0">Shopping Cart</h4>
-				<a href="#" class="btn btn-icon btn-danger-light btn-sm no-shadow" data-bs-dismiss="modal">
-					<span class="fa fa-close"></span>
-				</a>
-			  </div>
-		  </div>
-		  <div class="modal-body px-30 pb-30 bg-white slim-scroll4">
-				<div class="d-flex align-items-center justify-content-between pb-15">
-					<div class="d-flex flex-column me-2">
-						<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
-						<span class="text-muted">When an unknown printer</span>
-						<div class="d-flex align-items-center mt-2">
-							<span class="fw-600 me-5 fs-18">$ 125</span>
-							<span class="text-muted me-5">for</span>
-							<span class="fw-600 me-2 fs-18">4</span>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
-								<i class="fa fa-minus"></i>
-							</a>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon">
-								<i class="fa fa-plus"></i>
+		<!-- /quick_panel_toggle -->
+
+		<!-- quick_shop_toggle -->
+		<div class="modal modal-left fade" id="quick_shop_toggle" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="px-15 d-flex w-p100 align-items-center justify-content-between">
+							<h4 class="m-0">Shopping Cart</h4>
+							<a href="#" class="btn btn-icon btn-danger-light btn-sm no-shadow" data-bs-dismiss="modal">
+								<span class="fa fa-close"></span>
 							</a>
 						</div>
 					</div>
-					<a href="#" class="flex-shrink-0">
-						<img src="../../../images/product/product-1.png" class="avatar h-100 w-100" alt="" />
-					</a>
+					<div class="modal-body px-30 pb-30 bg-white slim-scroll4">
+						<div class="d-flex align-items-center justify-content-between pb-15">
+							<div class="d-flex flex-column me-2">
+								<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
+								<span class="text-muted">When an unknown printer</span>
+								<div class="d-flex align-items-center mt-2">
+									<span class="fw-600 me-5 fs-18">$ 125</span>
+									<span class="text-muted me-5">for</span>
+									<span class="fw-600 me-2 fs-18">4</span>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
+										<i class="fa fa-minus"></i>
+									</a>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon">
+										<i class="fa fa-plus"></i>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="flex-shrink-0">
+								<img src="../../../images/product/product-1.png" class="avatar h-100 w-100" alt="" />
+							</a>
+						</div>
+						<div class="dropdown-divider"></div>
+						<div class="d-flex align-items-center justify-content-between py-15">
+							<div class="d-flex flex-column me-2">
+								<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
+								<span class="text-muted">When an unknown printer</span>
+								<div class="d-flex align-items-center mt-2">
+									<span class="fw-600 me-5 fs-18">$ 125</span>
+									<span class="text-muted me-5">for</span>
+									<span class="fw-600 me-2 fs-18">4</span>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
+										<i class="fa fa-minus"></i>
+									</a>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon">
+										<i class="fa fa-plus"></i>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="flex-shrink-0">
+								<img src="../../../images/product/product-2.png" class="avatar h-100 w-100" alt="" />
+							</a>
+						</div>
+						<div class="dropdown-divider"></div>
+						<div class="d-flex align-items-center justify-content-between py-15">
+							<div class="d-flex flex-column me-2">
+								<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
+								<span class="text-muted">When an unknown printer</span>
+								<div class="d-flex align-items-center mt-2">
+									<span class="fw-600 me-5 fs-18">$ 125</span>
+									<span class="text-muted me-5">for</span>
+									<span class="fw-600 me-2 fs-18">4</span>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
+										<i class="fa fa-minus"></i>
+									</a>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon">
+										<i class="fa fa-plus"></i>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="flex-shrink-0">
+								<img src="../../../images/product/product-3.png" class="avatar h-100 w-100" alt="" />
+							</a>
+						</div>
+						<div class="dropdown-divider"></div>
+						<div class="d-flex align-items-center justify-content-between py-15">
+							<div class="d-flex flex-column me-2">
+								<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
+								<span class="text-muted">When an unknown printer</span>
+								<div class="d-flex align-items-center mt-2">
+									<span class="fw-600 me-5 fs-18">$ 125</span>
+									<span class="text-muted me-5">for</span>
+									<span class="fw-600 me-2 fs-18">4</span>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
+										<i class="fa fa-minus"></i>
+									</a>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon">
+										<i class="fa fa-plus"></i>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="flex-shrink-0">
+								<img src="../../../images/product/product-4.png" class="avatar h-100 w-100" alt="" />
+							</a>
+						</div>
+						<div class="dropdown-divider"></div>
+						<div class="d-flex align-items-center justify-content-between py-15">
+							<div class="d-flex flex-column me-2">
+								<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
+								<span class="text-muted">When an unknown printer</span>
+								<div class="d-flex align-items-center mt-2">
+									<span class="fw-600 me-5 fs-18">$ 125</span>
+									<span class="text-muted me-5">for</span>
+									<span class="fw-600 me-2 fs-18">4</span>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
+										<i class="fa fa-minus"></i>
+									</a>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon">
+										<i class="fa fa-plus"></i>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="flex-shrink-0">
+								<img src="../../../images/product/product-5.png" class="avatar h-100 w-100" alt="" />
+							</a>
+						</div>
+						<div class="dropdown-divider"></div>
+						<div class="d-flex align-items-center justify-content-between py-15">
+							<div class="d-flex flex-column me-2">
+								<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
+								<span class="text-muted">When an unknown printer</span>
+								<div class="d-flex align-items-center mt-2">
+									<span class="fw-600 me-5 fs-18">$ 125</span>
+									<span class="text-muted me-5">for</span>
+									<span class="fw-600 me-2 fs-18">4</span>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
+										<i class="fa fa-minus"></i>
+									</a>
+									<a href="#" class="btn btn-sm btn-success-light btn-icon">
+										<i class="fa fa-plus"></i>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="flex-shrink-0">
+								<img src="../../../images/product/product-6.png" class="avatar h-100 w-100" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-footer modal-footer-uniform">
+						<div class="d-flex align-items-center justify-content-between mb-10">
+							<span class="fw-600 text-muted fs-16 me-2">Total</span>
+							<span class="fw-600 text-end">$1248.00</span>
+						</div>
+						<div class="d-flex align-items-center justify-content-between mb-15">
+							<span class="fw-600 text-muted fs-16 me-2">Sub total</span>
+							<span class="fw-600 text-primary text-end">$4125.00</span>
+						</div>
+						<div class="text-end">
+							<button type="button" class="btn btn-primary">Place Order</button>
+						</div>
+					</div>
 				</div>
-			  <div class="dropdown-divider"></div>
-				<div class="d-flex align-items-center justify-content-between py-15">
-					<div class="d-flex flex-column me-2">
-						<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
-						<span class="text-muted">When an unknown printer</span>
-						<div class="d-flex align-items-center mt-2">
-							<span class="fw-600 me-5 fs-18">$ 125</span>
-							<span class="text-muted me-5">for</span>
-							<span class="fw-600 me-2 fs-18">4</span>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
-								<i class="fa fa-minus"></i>
-							</a>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon">
-								<i class="fa fa-plus"></i>
-							</a>
-						</div>
-					</div>
-					<a href="#" class="flex-shrink-0">
-						<img src="../../../images/product/product-2.png" class="avatar h-100 w-100" alt="" />
-					</a>
-				</div>
-			  <div class="dropdown-divider"></div>
-				<div class="d-flex align-items-center justify-content-between py-15">
-					<div class="d-flex flex-column me-2">
-						<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
-						<span class="text-muted">When an unknown printer</span>
-						<div class="d-flex align-items-center mt-2">
-							<span class="fw-600 me-5 fs-18">$ 125</span>
-							<span class="text-muted me-5">for</span>
-							<span class="fw-600 me-2 fs-18">4</span>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
-								<i class="fa fa-minus"></i>
-							</a>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon">
-								<i class="fa fa-plus"></i>
-							</a>
-						</div>
-					</div>
-					<a href="#" class="flex-shrink-0">
-						<img src="../../../images/product/product-3.png" class="avatar h-100 w-100" alt="" />
-					</a>
-				</div>
-			  <div class="dropdown-divider"></div>
-				<div class="d-flex align-items-center justify-content-between py-15">
-					<div class="d-flex flex-column me-2">
-						<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
-						<span class="text-muted">When an unknown printer</span>
-						<div class="d-flex align-items-center mt-2">
-							<span class="fw-600 me-5 fs-18">$ 125</span>
-							<span class="text-muted me-5">for</span>
-							<span class="fw-600 me-2 fs-18">4</span>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
-								<i class="fa fa-minus"></i>
-							</a>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon">
-								<i class="fa fa-plus"></i>
-							</a>
-						</div>
-					</div>
-					<a href="#" class="flex-shrink-0">
-						<img src="../../../images/product/product-4.png" class="avatar h-100 w-100" alt="" />
-					</a>
-				</div>
-			  <div class="dropdown-divider"></div> 
-				<div class="d-flex align-items-center justify-content-between py-15">
-					<div class="d-flex flex-column me-2">
-						<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
-						<span class="text-muted">When an unknown printer</span>
-						<div class="d-flex align-items-center mt-2">
-							<span class="fw-600 me-5 fs-18">$ 125</span>
-							<span class="text-muted me-5">for</span>
-							<span class="fw-600 me-2 fs-18">4</span>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
-								<i class="fa fa-minus"></i>
-							</a>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon">
-								<i class="fa fa-plus"></i>
-							</a>
-						</div>
-					</div>
-					<a href="#" class="flex-shrink-0">
-						<img src="../../../images/product/product-5.png" class="avatar h-100 w-100" alt="" />
-					</a>
-				</div>
-			  <div class="dropdown-divider"></div> 
-				<div class="d-flex align-items-center justify-content-between py-15">
-					<div class="d-flex flex-column me-2">
-						<a href="#" class="fw-600 fs-18 text-hover-primary">Product Name</a>
-						<span class="text-muted">When an unknown printer</span>
-						<div class="d-flex align-items-center mt-2">
-							<span class="fw-600 me-5 fs-18">$ 125</span>
-							<span class="text-muted me-5">for</span>
-							<span class="fw-600 me-2 fs-18">4</span>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon me-2">
-								<i class="fa fa-minus"></i>
-							</a>
-							<a href="#" class="btn btn-sm btn-success-light btn-icon">
-								<i class="fa fa-plus"></i>
-							</a>
-						</div>
-					</div>
-					<a href="#" class="flex-shrink-0">
-						<img src="../../../images/product/product-6.png" class="avatar h-100 w-100" alt="" />
-					</a>
-				</div>  
-		  </div>
-		  <div class="modal-footer modal-footer-uniform">
-			  <div class="d-flex align-items-center justify-content-between mb-10">
-				<span class="fw-600 text-muted fs-16 me-2">Total</span>
-				<span class="fw-600 text-end">$1248.00</span>
-			  </div>
-			  <div class="d-flex align-items-center justify-content-between mb-15">
-				<span class="fw-600 text-muted fs-16 me-2">Sub total</span>
-				<span class="fw-600 text-primary text-end">$4125.00</span>
-			  </div>
-			  <div class="text-end">
-				<button type="button" class="btn btn-primary">Place Order</button>
-			  </div>
-		  </div>
+			</div>
 		</div>
-	  </div>
-  </div>
-  <!-- /quick_shop_toggle -->
-</div>
-<!-- ./wrapper -->
+		<!-- /quick_shop_toggle -->
+	</div>
+	<!-- ./wrapper -->
 	<!-- Sidebar -->
-	
+
 	<!-- Page Content overlay -->
-	
-	
+
+
 	<!-- Vendor JS -->
 	<script src="../src/js/vendors.min.js"></script>
 	<script src="../src/js/pages/chat-popup.js"></script>
-    <script src="../../../assets/icons/feather-icons/feather.min.js"></script>	<script src="../../../assets/vendor_components/jquery-steps-master/build/jquery.steps.js"></script>
-    <script src="../../../assets/vendor_components/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
-    <script src="../../../assets/vendor_components/sweetalert/sweetalert.min.js"></script>
-    <script src="../../../assets/vendor_components/dropzone/dropzone.js"></script>
-	
+	<script src="../../../assets/icons/feather-icons/feather.min.js"></script>
+	<script src="../../../assets/vendor_components/jquery-steps-master/build/jquery.steps.js"></script>
+	<script src="../../../assets/vendor_components/jquery-validation-1.17.0/dist/jquery.validate.min.js"></script>
+	<script src="../../../assets/vendor_components/sweetalert/sweetalert.min.js"></script>
+	<script src="../../../assets/vendor_components/dropzone/dropzone.js"></script>
+
 	<!-- CRMi App -->
 	<script src="../src/js/template.js"></script>
-	
-    <script src="../src/js/pages/steps.js"></script>
-	
-    
-	
+
+	<script src="../src/js/pages/steps.js"></script>
+
+
+
+
 </body>
+
 </html>

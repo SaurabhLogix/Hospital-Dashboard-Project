@@ -20,13 +20,55 @@
     border: 1px solid #ccc;
     border-radius: 12px;
     padding: 15px;
+    margin-top: 20px;
+    direction: ltr;
 }
 .wizard-content .wizard > .steps > ul > li {
     background: none;
     border: 0;
 }
+.theme-info .wizard-content .wizard > .steps > ul > li.current {
+    border: 2px solid #3596f7;
+    background-color: #3596f7;
+    position: relative;
+}
+.theme-info .wizard-content .wizard > .steps > ul > li.current:before {
+    content: '';
+    width: 110%;
+    height: 250%;
+    background-color: #3e64ab;
+    position: absolute;
+    top: -28px;
+    left: -5px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.4);
+}
 .btn-custom {
     background-color: #3e64ab;
     border-color: #3e64ab;
     color:#fff;
+}
+
+.grp_ico{
+    position: absolute;
+  left: 10px;
+  top: 15px;
+}
+
+.wizard-content .wizard > .steps > ul > li.done a {
+  color: #737373;
+}
+
+.theme-info .wizard-content .wizard > .steps > ul > li.done{
+    background-color: #fff;
+}
+
+.form-control:not(select), .form-select:not(select){
+    border: 1px solid #aaa;
+}
+
+.rtl [type="checkbox"] + label {
+  padding-left: 0;
+  padding-right: 35px !important;
+  color: #8a8a8a;
 }
